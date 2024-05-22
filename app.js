@@ -91,4 +91,6 @@ reset.addEventListener('click', function() {
     compscore = 0;
     us.innerText = "0";
     cs.innerText = "0";
+    userRes.setAttribute("src","");
+    compRes.setAttribute("src","");
 });
