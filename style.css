@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#image{
+    height:100px;
+    width: 100px;
+}
+.choice{
+    border: solid black;
+    width: 100px;
+    margin: 3vw;
+    border-radius: 50%;
+    background-color: rgb(195, 44, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vw;
+}
+nav ul{
+   list-style-type: none ;
+   font-size: 1.5rem;
+}
+.choice:hover{
+    background-color: rgb(202, 236, 53);
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+}
+nav{
+    background-color: black;
+    height: 33px; 
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    margin-right: -80px;
+
+}
+body{
+    background-color: rgb(8, 91, 214);
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    color: aliceblue;
+}
+.score{
+text-align: center;
+    font-size: 2.2rem;
+    margin-right: 2.5vw;
+    margin-left: 2.8vw;
+    margin-top: 39px;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.reset{
+    margin-top: 30px;
+    font-size: 1.7rem;
+    background-color: rgb(192, 83, 43);
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: aliceblue;
+    width: fit-content;
+    border-radius: 20px;
+    border: solid white;
+}
+
+.reset:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color:  rgb(192, 83, 43);
+}
