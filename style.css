@@ -1,10 +1,21 @@
 *{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 #image{
     height:100px;
     width: 100px;
+}
+.res{
+    width: 100px;
+    height:50px;
+    margin: 3vw;
+    border-radius: 50%;
+    background-color: rgb(195, 44, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .choice{
     border: solid black;
@@ -26,12 +37,7 @@ nav ul{
    list-style-type: none ;
    font-size: 1.5rem;
 }
-.choice:hover{
-    background-color: rgb(202, 236, 53);
-    cursor: pointer;
-    height: 150px;
-    width: 150px;
-}
+
 nav{
     background-color: black;
     height: 33px; 

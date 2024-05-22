@@ -6,6 +6,9 @@ let us = document.getElementById("user-score");
 let cs = document.getElementById("comp-score");
 let reset = document.querySelector(".reset");
 const audioTurn = new Audio('audioTurn.mp3');
+let userRes = document.getElementById("imguserchoice");
+let compRes = document.getElementById("imgcompchoice");
+
 
 
 
@@ -16,20 +19,43 @@ choices.forEach((choice) => {
             c.style.borderColor = "black";
         });
         let userchoice = choice.getAttribute("id");
+        let src="";
         console.log(userchoice + " by user");
+        switch(userchoice){
+            case "rock":
+                src="pngimg.com - fist_PNG15.png";
+                break;
+            case "paper":
+                src="old-paper-transparent-background-22.png";
+                break;
+            case "scissors":
+                src="pngwing.com.png";
+                break;
+        }
+        userRes.setAttribute('src',src);
         let result = compchoice();
-        let compdecide = document.getElementById(result);
-        compdecide.style.borderColor = "rgb(202, 236, 53)";
         
-        console.log(result + " by comp");
 
         checkWin(result, userchoice);
     });
 });
 
 function compchoice() {
+    let src="";
     let arr = ["rock", "paper", "scissors"];
     let no = Math.floor(Math.random() * 3);
+    switch(arr[no]){
+        case "rock":
+            src="pngimg.com - fist_PNG15.png";
+            break;
+        case "paper":
+            src="old-paper-transparent-background-22.png";
+            break;
+        case "scissors":
+            src="pngwing.com.png";
+            break;
+    }
+    compRes.setAttribute('src',src);
     return arr[no];
 }
 
